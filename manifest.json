@@ -1,0 +1,33 @@
+{
+  "name": "Deploy History",
+  "version": "1.0",
+  "description": "Know the deploy history by commit!",
+  "permissions": ["activeTab", "declarativeContent", "storage"],
+  "options_page": "options.html",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/kubepack16.png",
+      "32": "images/kubepack32.png",
+      "48": "images/kubepack48.png",
+      "128": "images/kubepack128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["user-script.js"]
+    }
+  ],
+  "icons": {
+    "16": "images/kubepack16.png",
+    "32": "images/kubepack32.png",
+    "48": "images/kubepack48.png",
+    "128": "images/kubepack128.png"
+  },
+  "manifest_version": 2
+}

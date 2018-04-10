@@ -1,0 +1,13 @@
+{
+  "name": "kubepack",
+  "description": "AppsCode KubePack",
+  "version": "1.0.0",
+  "authors": [
+    "AppsCode Engineering <eng@appscode.com>"
+  ],
+  "scripts": [],
+  "dependencies": {
+    "axios": "^0.18.0"
+  },
+  "devDependencies": {}
+}
